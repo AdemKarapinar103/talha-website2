@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aanbeveling | KPN Dataverkeer</title>
+<meta name="description" content="Hoe kan KPN het groeiende dataverkeer betrouwbaar en efficiënt verwerken? Openbare cijfers, analyse en een advies over het lokale model Qwen2.5:0.5b.">
+<link rel="icon" href="afbeeldingen/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/stijl.css">
+</head>
+<body>
+<a class="skip" href="#inhoud">Direct naar de inhoud</a>
+<header class="site"><div class="wrap">
+<a class="merk" href="index.html"><img src="afbeeldingen/logo.svg" alt="">KPN Dataverkeer</a>
+<nav aria-label="Hoofdmenu"><ul><li><a href="index.html">Home</a></li><li><a href="analyse.html">Analyse</a></li><li><a href="cijfers.html">Cijfers</a></li><li><a href="llm-toekomst.html">Qwen</a></li><li><a href="aanbeveling-qwen.html" aria-current="page">Aanbeveling</a></li></ul></nav>
+</div></header>
+<section class="hero klein"><div class="wrap"><h1>Ons advies: start met een kleine pilot.</h1><p>Ja, test Qwen2.5:0.5b, maar alleen voor eenvoudige taken en met menselijke controle.</p></div></section>
+<main id="inhoud">
+<section class="s"><div class="wrap split">
+<div><h2>Waarom wel</h2><ul>
+<li>Testen kost bijna niets: gratis licentie, ongeveer 400 MB, gewone computer.</li>
+<li>Gegevens hoeven het eigen systeem niet te verlaten. Dat past bij het cybersecurity-risico uit het verslag.</li>
+<li>KPN heeft al AI-ervaring en een AI Excellence Center om de uitkomst te beoordelen.</li></ul></div>
+<div><h2>Waarom niet meer dan een pilot</h2><ul>
+<li>Het model is klein en maakt fouten. Fouten bij klanten kosten vertrouwen, en klanten stappen makkelijk over.</li>
+<li>Het lost de kern (netwerkcapaciteit) niet op. Het helpt alleen bij het werk eromheen.</li></ul></div>
+</div></section>
+<section class="s grijs"><div class="wrap">
+<h2>Voorgesteld plan</h2>
+<div class="tabelwrap"><table>
+<thead><tr><th>Stap</th><th>Wat</th><th>Uitkomst</th></tr></thead>
+<tbody>
+<tr><td>1. Kiezen</td><td>Eén taak: storingsmeldingen indelen in 5 categorieën</td><td>Duidelijke opdracht</td></tr>
+<tr><td>2. Testset</td><td>Ongeveer 200 meldingen zonder persoonsgegevens handmatig labelen</td><td>Meetlat</td></tr>
+<tr><td>3. Testen</td><td>Qwen2.5:0.5b laten indelen en vergelijken met de labels</td><td>Percentage goed</td></tr>
+<tr><td>4. Beslissen</td><td>Goed genoeg? Zo niet, probeer een groter model (bijvoorbeeld 1,5b of 3b)</td><td>Go of no-go</td></tr>
+</tbody></table></div>
+<div class="kader"><strong>Voorbeeld van een go-criterium (aanname):</strong> minstens 85% van de meldingen komt in de juiste categorie en een medewerker kan de rest snel corrigeren. Dit percentage is een voorstel; KPN moet het zelf vaststellen.</div>
+</div></section>
+<section class="s"><div class="wrap">
+<h2>Risico's om te bewaken</h2>
+<ul><li><strong>Foute uitkomsten:</strong> laat altijd een medewerker controleren.</li><li><strong>Privacy:</strong> gebruik alleen testgegevens zonder persoonsgegevens.</li><li><strong>Te hoge verwachtingen:</strong> maak duidelijk dat het een proef is.</li></ul>
+<p>Terug naar de <a href="cijfers.html">cijfers</a> of de <a href="analyse.html">analyse</a>.</p>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="kol">
+<div><h2>KPN Dataverkeer</h2><p>Een onderzoekssite over KPN, het groeiende dataverkeer en de rol van een klein lokaal taalmodel. Geen officiële KPN-website.</p></div>
+<div><h2>Pagina's</h2><ul><li><a href="index.html">Home</a></li><li><a href="analyse.html">Analyse</a></li><li><a href="cijfers.html">Cijfers</a></li><li><a href="llm-toekomst.html">Qwen</a></li><li><a href="aanbeveling-qwen.html">Aanbeveling</a></li></ul></div>
+<div><h2>Documentatie</h2><ul><li><a href="bronnen/bronnen.md">Bronnen</a></li><li><a href="docs/ai-log.md">AI-log</a></li><li><a href="docs/testlog.md">Testlog</a></li><li><a href="README.md">README</a></li></ul></div>
+</div>
+<small>Schoolproject Business IT &amp; Management, Hogeschool Rotterdam (BIMGST05R1), 2026-2027. Cijfers: ACM Telecommonitor.</small>
+</div></footer>
+</body>
+</html>

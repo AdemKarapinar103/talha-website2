@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Qwen in de toekomst | KPN Dataverkeer</title>
+<meta name="description" content="Hoe kan KPN het groeiende dataverkeer betrouwbaar en efficiënt verwerken? Openbare cijfers, analyse en een advies over het lokale model Qwen2.5:0.5b.">
+<link rel="icon" href="afbeeldingen/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/stijl.css">
+</head>
+<body>
+<a class="skip" href="#inhoud">Direct naar de inhoud</a>
+<header class="site"><div class="wrap">
+<a class="merk" href="index.html"><img src="afbeeldingen/logo.svg" alt="">KPN Dataverkeer</a>
+<nav aria-label="Hoofdmenu"><ul><li><a href="index.html">Home</a></li><li><a href="analyse.html">Analyse</a></li><li><a href="cijfers.html">Cijfers</a></li><li><a href="llm-toekomst.html" aria-current="page">Qwen</a></li><li><a href="aanbeveling-qwen.html">Aanbeveling</a></li></ul></nav>
+</div></header>
+<section class="hero klein"><div class="wrap"><h1>Qwen2.5:0.5b: klein, gratis en lokaal.</h1><p>Grote AI-modellen draaien in de cloud en kosten geld per gebruik. Er zijn ook modellen die op een gewone computer draaien.</p></div></section>
+<main id="inhoud">
+<section class="s"><div class="wrap split">
+<div><h2>Wat is het?</h2></div>
+<div><p>Qwen2.5:0.5b is een taalmodel van Alibaba Cloud met ongeveer 0,5 miljard parameters (494 miljoen). Het is gratis te gebruiken onder de Apache-2.0-licentie. In Ollama, een programma om modellen lokaal te draaien, is het ongeveer 400 MB groot. Het kan een tekstvenster van 32.768 tokens aan en heeft geen speciale grafische kaart nodig.</p>
+<pre>ollama pull qwen2.5:0.5b
+ollama run qwen2.5:0.5b</pre></div>
+</div></section>
+<section class="s grijs"><div class="wrap">
+<h2>Klein lokaal model of groot model in de cloud?</h2>
+<div class="tabelwrap"><table>
+<thead><tr><th>Punt</th><th>Qwen2.5:0.5b (lokaal)</th><th>Groot cloudmodel</th></tr></thead>
+<tbody>
+<tr><td>Kosten</td><td>Geen kosten per vraag, wel eigen hardware</td><td>Betalen per gebruik</td></tr>
+<tr><td>Gegevens</td><td>Blijven binnen de eigen omgeving</td><td>Gaan naar een externe partij</td></tr>
+<tr><td>Snelheid</td><td>Snel op een gewone computer</td><td>Afhankelijk van internet en drukte</td></tr>
+<tr><td>Kwaliteit</td><td>Beperkt, maakt sneller fouten</td><td>Veel hoger</td></tr>
+<tr><td>Geschikt voor</td><td>Eenvoudige, afgebakende taken</td><td>Complexe vragen en lange teksten</td></tr>
+</tbody></table></div>
+</div></section>
+<section class="s"><div class="wrap split">
+<div><h2>Mogelijke toepassingen</h2><p>Dit zijn eigen voorstellen op basis van het verslag, geen bestaande KPN-projecten.</p></div>
+<div><ul>
+<li><strong>Storingsmeldingen sorteren:</strong> meldingen indelen in categorieën, bijvoorbeeld "trage mobiele data" of "geen verbinding".</li>
+<li><strong>Klantvragen doorsturen:</strong> een vraag herkennen en naar de juiste medewerker of webpagina sturen. Volgens het verslag doet KPN dit al met AI.</li>
+<li><strong>Korte samenvattingen:</strong> een gesprek of ticket in twee zinnen samenvatten voor een medewerker.</li>
+</ul></div>
+</div></section>
+<section class="s donker"><div class="wrap split">
+<div><h2>Beperkingen</h2></div>
+<div><p>Een model van deze grootte kan feiten verzinnen, maakt fouten bij lastige redenering en is in het Nederlands zwakker dan in het Engels. Het mag geen klantadvies geven zonder controle. Netwerkdrukte herkent het niet zelf: daarvoor zijn netwerkgegevens en andere technieken nodig.</p>
+<p><a href="aanbeveling-qwen.html">Lees ons advies</a></p></div>
+</div></section>
+</main>
+<footer class="site"><div class="wrap">
+<div class="kol">
+<div><h2>KPN Dataverkeer</h2><p>Een onderzoekssite over KPN, het groeiende dataverkeer en de rol van een klein lokaal taalmodel. Geen officiële KPN-website.</p></div>
+<div><h2>Pagina's</h2><ul><li><a href="index.html">Home</a></li><li><a href="analyse.html">Analyse</a></li><li><a href="cijfers.html">Cijfers</a></li><li><a href="llm-toekomst.html">Qwen</a></li><li><a href="aanbeveling-qwen.html">Aanbeveling</a></li></ul></div>
+<div><h2>Documentatie</h2><ul><li><a href="bronnen/bronnen.md">Bronnen</a></li><li><a href="docs/ai-log.md">AI-log</a></li><li><a href="docs/testlog.md">Testlog</a></li><li><a href="README.md">README</a></li></ul></div>
+</div>
+<small>Schoolproject Business IT &amp; Management, Hogeschool Rotterdam (BIMGST05R1), 2026-2027. Cijfers: ACM Telecommonitor.</small>
+</div></footer>
+</body>
+</html>
